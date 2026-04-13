@@ -1,0 +1,69 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+header .iconbox {
+  display: none !important;
+}
+header h3 {
+  font-size: 24px;
+}
+header div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div nav {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+header div button {
+  background-color: #23A6F0;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: white;
+    color: black;
+  }
+  header .iconbox {
+    display: flex !important;
+    gap: 25px;
+    width: 30%;
+  }
+  header div {
+    justify-content: center;
+    width: 100%;
+  }
+  header div button {
+    display: none !important;
+  }
+  header div nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    color: #737373;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -3,3 +3,71 @@
     padding: 0;
     margin: 0;
 }
+@mixin btnmix($pdn, $radius){
+    background-color: #23A6F0;
+    color: white;
+    padding: $pdn;
+    border: none;
+    border-radius: $radius;
+    font-size: 14px;
+    font-weight: 700;
+}
+header{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    .iconbox{
+        display: none !important;
+    }
+    h3{
+        font-size: 24px;
+    }
+    div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+        button{
+            @include btnmix(15px 30px, 5px)
+        }
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    header{
+        flex-wrap: wrap;
+        gap: 25px;
+        background-color: white;
+        color: black;
+        .iconbox{
+            display: flex !important;
+            gap: 25px;
+            width: 30%;
+        }
+        div{
+            justify-content: center;
+            width: 100%;
+            button{
+            display: none !important;
+        }
+            nav{
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 0;
+                color: #737373;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
