@@ -13,12 +13,18 @@
     font-weight: 700;
 }
 header{
-    display: flex;
+    position: relative;
     max-width: 1200px;
     margin: auto;
+}
+.headercont{
+    color: white;
+    display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    position: absolute;
+    width: 100%;
     .iconbox{
         display: none !important;
     }
@@ -34,21 +40,66 @@ header{
             display: flex;
             gap: 20px;
             font-size: 14px;
+            font-weight: 600;
         }
         button{
             @include btnmix(15px 30px, 5px)
         }
     }
 }
-
-
+.form-section{
+    background-image: url(img/section1/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    padding-top: 200px;
+    color: white;
+    .sect1cont{
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+    aside{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 450px;
+        h1{
+            font-size: 58px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        div{
+            display: flex;
+            gap: 15px;
+            
+            button:first-child{
+                @include btnmix(15px 35px, 37px);
+            }
+            button:last-child{
+                @include btnmix(15px 35px, 37px);
+                background-color: rgba(255, 255, 255, 0);
+                border: 1px solid white;
+            }
+        }
+    }
+}
 
 @media (max-width: 500px) {
     header{
+        padding: 20px;
+    }
+    .headercont{
+        position: static;
         flex-wrap: wrap;
         gap: 25px;
         background-color: white;
         color: black;
+        padding: 0;
         .iconbox{
             display: flex !important;
             gap: 25px;
@@ -66,7 +117,32 @@ header{
                 padding: 50px 0;
                 color: #737373;
                 font-size: 30px;
-                font-weight: 600;
+                gap: 35px;
+            }
+        }
+    }
+    .form-section{
+        background-position: -400px;
+        padding: 50px 0;
+        .sect1cont{
+            gap: 50px;
+            flex-direction: column;
+            aside{
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                h1{
+                    font-size: 40px;
+                }
+                h4{
+                    font-size: 20px;
+                    font-weight: 400;
+                    width: 280px;
+                }
+                div{
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         }
     }
