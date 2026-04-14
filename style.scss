@@ -349,7 +349,34 @@ header{
         }
     }
 }
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    align-items: center;
+    .fbox{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h3{
+            @include zagl();
+            font-size: 24px;
+        }
+        p{
+            @include opstxt(500, 100%);
+        }
+        .iconbox{
+            display: flex;
+            gap: 15px;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+}
 
 
 
@@ -505,6 +532,18 @@ header{
                 }
                 p{
                     display: none !important;
+                }
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        .fbox{
+            .iconbox{
+                i{
+                    font-size: 20px;
                 }
             }
         }

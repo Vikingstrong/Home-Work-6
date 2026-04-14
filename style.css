@@ -390,6 +390,39 @@ header {
   border-end-start-radius: 0px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  align-items: center;
+}
+footer .fbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .fbox h3 {
+  font-size: 40px;
+  color: #252B42;
+  font-size: 24px;
+}
+footer .fbox p {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+footer .fbox .iconbox {
+  display: flex;
+  gap: 15px;
+}
+footer .fbox .iconbox i {
+  font-size: 30px;
+}
+
 @media (max-width: 500px) {
   header {
     padding: 20px;
@@ -514,5 +547,13 @@ header {
   }
   .section6 .sect6cont aside p {
     display: none !important;
+  }
+  footer {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+  }
+  footer .fbox .iconbox i {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
