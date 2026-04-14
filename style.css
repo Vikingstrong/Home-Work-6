@@ -341,6 +341,55 @@ header {
   color: white;
 }
 
+.section6 {
+  background-color: #252B42;
+}
+.section6 .sect6cont {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: center;
+}
+.section6 .sect6cont aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.section6 .sect6cont aside h2 {
+  font-size: 40px;
+}
+.section6 .sect6cont aside p {
+  font-size: 14px;
+  font-weight: 500;
+  width: 55%;
+}
+.section6 .sect6cont div {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.section6 .sect6cont div input {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  border-start-end-radius: 0px;
+  border-end-end-radius: 0px;
+}
+.section6 .sect6cont div button {
+  background-color: #23A6F0;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  border-start-start-radius: 0px;
+  border-end-start-radius: 0px;
+}
+
 @media (max-width: 500px) {
   header {
     padding: 20px;
@@ -451,5 +500,19 @@ header {
   .section5 .sect5osncont .sect5cont {
     flex-direction: column;
     gap: 25px;
+  }
+  .section6 .sect6cont {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .section6 .sect6cont aside {
+    align-items: center;
+  }
+  .section6 .sect6cont aside h2 {
+    font-size: 30px;
+  }
+  .section6 .sect6cont aside p {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
