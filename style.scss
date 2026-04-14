@@ -193,6 +193,51 @@ header{
         }
     }
 }
+.section4{
+    background-color: #FAFAFA;
+    .sect4osncont{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 100px 20px;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        h2{
+            @include zagl();
+        }
+        p{
+            @include opstxt(500, 35%);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .sect4cont{
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .sect4box{
+                display: flex;
+                flex-direction: column;
+                padding: 25px;
+                padding-left: 50px;
+                background-color: white;
+                border-radius: 9px;
+                gap: 10px;
+                width: 21%;
+                h5{
+                    font-size: 16px;
+                    color: #252B42;
+                }
+                p{
+                    @include opstxt(600, 100%);
+                    text-align: start;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -307,5 +352,21 @@ header{
                 }
             }
         }    
+    }
+    .section4{
+        .sect4osncont{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                width: 75%;
+                margin-bottom: 50px;
+            }
+            .sect4cont{
+                .sect4box{
+                    width: 80%;
+                }
+            }
+        }
     }
 }
