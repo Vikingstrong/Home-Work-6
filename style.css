@@ -255,6 +255,92 @@ header {
   margin: 0;
 }
 
+.section5 {
+  background-color: #FAFAFA;
+}
+.section5 .sect5osncont {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 15px;
+  padding: 100px 20px;
+}
+.section5 .sect5osncont h2 {
+  font-size: 40px;
+  color: #252B42;
+}
+.section5 .sect5osncont p {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  width: 35%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.section5 .sect5osncont .sect5cont {
+  display: flex;
+  gap: 3px;
+  align-items: end;
+}
+.section5 .sect5osncont .sect5cont .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 25px;
+  border: 1px solid #23A6F0;
+  background-color: white;
+  border-radius: 10px;
+}
+.section5 .sect5osncont .sect5cont .card h3 {
+  font-size: 40px;
+  color: #252B42;
+  font-size: 24px;
+}
+.section5 .sect5osncont .sect5cont .card h5 {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 700;
+  width: 70%;
+  text-align: center;
+}
+.section5 .sect5osncont .sect5cont .card p {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  width: 95%;
+  color: #252B42;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: start;
+  margin: 0;
+}
+.section5 .sect5osncont .sect5cont .card button {
+  background-color: #23A6F0;
+  color: white;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.section5 .sect5osncont .sect5cont .card2 {
+  background-color: #252B42;
+  padding: 75px 25px;
+}
+.section5 .sect5osncont .sect5cont .card2 h3 {
+  color: white;
+}
+.section5 .sect5osncont .sect5cont .card2 h5 {
+  color: white;
+}
+.section5 .sect5osncont .sect5cont .card2 p {
+  color: white;
+}
+
 @media (max-width: 500px) {
   header {
     padding: 20px;
@@ -354,5 +440,16 @@ header {
   }
   .section4 .sect4osncont .sect4cont .sect4box {
     width: 80%;
+  }
+  .section5 .sect5osncont h2 {
+    font-size: 30px;
+  }
+  .section5 .sect5osncont p {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  .section5 .sect5osncont .sect5cont {
+    flex-direction: column;
+    gap: 25px;
   }
 }/*# sourceMappingURL=style.css.map */

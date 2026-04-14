@@ -238,7 +238,75 @@ header{
         }
     }
 }
-
+.section5{
+    background-color: #FAFAFA;
+    .sect5osncont{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        gap: 15px;
+        padding: 100px 20px;
+        h2{
+            @include zagl();
+        }
+        p{
+            @include opstxt(500, 35%);
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .sect5cont{
+            display: flex;
+            gap: 3px;
+            align-items: end;
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+                padding: 50px 25px;
+                border: 1px solid #23A6F0;
+                background-color: white;
+                border-radius: 10px;
+                
+                h3{
+                    @include zagl();
+                    font-size: 24px;
+                }
+                h5{
+                    @include opstxt(700, 70%);
+                    text-align: center;
+                }
+                p{
+                    @include opstxt(600, 95%);
+                    color: #252B42;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    text-align: start;
+                    margin: 0;
+                }
+                button{
+                    @include btnmix(20px 100px, 10px);
+                }
+            }
+            .card2{
+                background-color: #252B42;
+                padding: 75px 25px;
+                h3{
+                    color: white;
+                }
+                h5{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -366,6 +434,21 @@ header{
                 .sect4box{
                     width: 80%;
                 }
+            }
+        }
+    }
+    .section5{
+        .sect5osncont{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                width: 70%;
+                margin-bottom: 50px;
+            }
+            .sect5cont{
+                flex-direction: column;
+                gap: 25px;
             }
         }
     }
