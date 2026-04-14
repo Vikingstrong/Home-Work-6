@@ -550,7 +550,7 @@ footer .fbox .iconbox i {
   }
   footer {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-items: start;
   }
   footer .fbox .iconbox i {
